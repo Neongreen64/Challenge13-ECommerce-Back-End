@@ -9,7 +9,7 @@ Your task is to build the back end for an e-commerce site by modifying starter c
 - [License](#license)
 - [Usage](#usage)
 - [Tests](#tests)
-- [Questions](#questions)
+- [Video](#video)
 
 ## Installation
 No installation needed just download the code.
@@ -28,3 +28,6 @@ Navigate to the project directory and type npm start
 
 ## Questions
 If you have any questions, reach out to me at [GitHub](https://github.com/Neongreen64) or via email at example@gmail.com.
+
+## Video
+Challenge13-Walkthrough.webm
