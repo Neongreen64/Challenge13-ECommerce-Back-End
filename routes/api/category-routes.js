@@ -9,16 +9,18 @@ router.get('/', (req, res) => {
     // be sure to include its associated Products
     include: [{ model:Product }]
   }).then(categories => res.json(categories))
-  .catch(err => res.status(400).json(err));
+  .catch(e => res.status(400).json(e));
   
 });
 
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   Category.findOne({
-    where: { id:req.params.id}
-  })
-  // be sure to include its associated Products
+    // be sure to include its associated Products
+    where: { id:req.params.id},
+    include: [{ model:Product }]
+  }).then(category => res.json(category))
+  .catch(e => res.status(400).json(e));
 });
 
 router.post('/', (req, res) => {
